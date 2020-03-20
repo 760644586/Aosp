@@ -1,3 +1,7 @@
+sudo apt-get -y install openjdk-8-jdk
+sudo apt-get -y install python3.7
+sudo apt-get -y install python3-pip
+
 mkdir ~/bin
 PATH=~/bin:$PATH
 
