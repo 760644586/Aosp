@@ -1,8 +1,8 @@
 mkdir ~/bin
 PATH=~/bin:$PATH
 
-curl https://gerrit-googlesource.lug.ustc.edu.cn/git-repo > ~/bin/repo
-chmod a+x ~/bin/repo
+git clone https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
+sudo cp -r ./git-repo/. ./bin
 
 git config --global user.email "xiaomi@xiaomi.com"
 git config --global user.name "xiaomi"
