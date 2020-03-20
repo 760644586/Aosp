@@ -12,9 +12,15 @@ sudo apt-get install -y lib32ncurses5-dev x11proto-core-dev libx11-dev
 sudo apt-get install -y libgl1-mesa-dev libxml2-utils xsltproc unzip m4
 sudo apt-get install -y lib32z-dev ccache
 
+rm -rf /usr/bin/python3
+rm -rf /usr/bin/pip3
+ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3
+ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3
+
 mkdir ~/bin
 PATH=~/bin:$PATH
 
+rm -fr ./git-repo
 git clone https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
 sudo cp -r ./git-repo/. ./bin
 chmod a+x ~/bin/repo
